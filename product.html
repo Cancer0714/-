@@ -1,0 +1,82 @@
+
+<!DOCTYPE html>
+
+<html>
+ <head>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick-theme.css">
+  <link rel="stylesheet" href="style.css">
+  </head>
+
+ <body>
+  <title>商品紹介ページ</title>
+
+  <header>
+  <h1>おすすめの商品</h1>
+  </header>
+  <p>このページでは、私たちが自信を持っておすすめする商品を紹介します。</p>
+  <div class="slider">
+<div><img src="https://placehold.jp/300x300.png" alt="商品画像1"></div>
+<div><img src="https://placehold.jp/300x300.png" alt="商品画像2"></div>
+<div><img src="https://placehold.jp/300x300.png" alt="商品画像3"></div>
+  </div>
+
+  <ul>
+    <li>1．高品質な素材を使用</li>
+    <li>2．シンプルで使いやすいデザイン</li>
+    <li>3．お手頃価格</li>
+  </ul>
+
+ <form method="get" action="complete.html" onsubmit="return checkForm();" >
+
+  <table>
+    <tr>
+       <td>お名前:</td>
+       <td><input type="text" name="name" id="name" placeholder="例: 山田太郎"></td>
+     </tr>
+
+    <tr>
+       <td>メールアドレス:</td>
+       <td><input type="email" name="email" id="email" placeholder="例: example@example.com"></td>
+    </tr>
+
+    <tr>
+      　<td>性別:</td>
+      　<td><input type="radio" name="gender" value="男性" id="male"><label for="male" id="man">男性</label>
+          <input type="radio" name="gender" value="女性" id="female"><label for="female" id="fem">女性</label>
+        </td>
+    </tr>
+
+    <tr>
+        <td>購入数:</td>
+        <td><input type="number" name="quantity" id="quantity" min="1" value="1"></td>  
+    </tr>
+
+    <tr>
+        <td>お届け先</td>
+        <td><select name="location">
+            <option value="1">東京</option>
+            <option value="2">大阪</option>
+            <option value="3">名古屋</option>
+        </select></td>
+    </tr>
+     
+    <tr>
+        <td>ご要望:</td>
+        <td><textarea name="requests" rows="5" cols="40" placeholder="例：配達時間の希望などを入力してください"></textarea></td>
+    </tr>
+
+    <tr>
+        <td><input type="submit" value="購入する"></td>
+   
+    </tr>
+    
+ </table>
+ </form>
+<script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel/slick/slick.min.js"></script>
+<script src="slider.js"></script>
+<script src="script.js"></script>
+</body>
+
+</html>

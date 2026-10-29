@@ -1,0 +1,87 @@
+body{
+background-color: #f9fafc;
+font-family: Arial, sans-serif;
+color: #333;
+}
+
+header{
+color: #2c3e50;
+background-color: #ecf0f1;
+text-align: center;
+padding : 15px;
+font-size: 1.8rem;
+border-bottom: 1px solid #bdc3c7;
+}
+
+p{
+text-align: center;
+padding: 20px;
+}
+
+li{
+list-style-type: none;
+background-color: #e8f5e9;
+color: #27ae60;
+border-radius: 5px;
+padding: 10px;
+margin: 10px auto;
+width: 600px;
+}
+
+table{
+background-color: #ffffff;
+width: 700px;
+padding: 30px;
+border-radius: 5px;
+margin:0 auto;
+border:1px groove #ccc;
+}
+
+td{
+font-weight:bold;
+padding: 8px; 
+}
+
+input[type="text"], 
+input[type="email"], 
+input[type="radio"],
+input[type="number"], 
+select,
+textarea{
+border: 1px groove #ccc;
+padding: 5px;
+}
+
+input[type="submit"]{
+background-color: #3498db;
+color: #ffffff;
+border-radius: 3px;
+height: 35px;
+width: 90px;
+border: none;
+}
+
+input[type="submit"]:hover{
+background-color: #2980b9;
+}
+
+input.error{
+    border: 2px solid red;
+    color: red;
+}
+
+label.error{
+    color: red;
+}
+
+/* ===== スライドショーの見た目を調整するCSSを追加 ===== */
+.slider {
+max-width: 600px;
+margin: 20px auto;
+text-align: center;
+}
+.slider img {
+width: 100%;
+border-radius: 10px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
